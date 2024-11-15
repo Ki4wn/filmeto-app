@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-[13px] xl:text-[14px] 2xl:text-[15px];
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle, #7e3c37 0, #2c1513 100%);
+  scrollbar-color: #a24d46 #1b0d0c;
+}
+a {
+  @apply text-base-white bg-transparent transition duration-200 ease-in-out;
+  text-decoration: none;
+}
+.logo img {
+  @apply h-7 align-middle;
+}
+#menubar {
+  @apply flex h-[60px] items-center grow rounded-md bg-primary px-5;
+}
+#menubar > ul {
+  @apply m-0 p-0 flex;
+  list-style: none;
+}
+#menubar > ul > li {
+  @apply relative;
+}
+#menubar > ul > li > a {
+  @apply inline-flex cursor-pointer items-center h-[60px] w-full px-6 text-[1.15rem] font-medium;
+}
+#menubar > ul > li.active > a,
+#menubar > ul > li:hover > a {
+  background: #a24d46;
+  color: #fff;
+}
+#menubar-toggle > i {
+  @apply text-[1.7rem] text-white;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #dcb9a9;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.675rem 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
