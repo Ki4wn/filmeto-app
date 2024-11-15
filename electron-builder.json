@@ -1,0 +1,21 @@
+{
+  "appId": "com.cyntax.filmeto",
+  "icon": "./public/icon/main.png",
+  "files": [
+    "dist-electron",
+    "dist-frontend"
+  ],
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Entertainment"
+  },
+  "win": {
+    "target": [
+      "portable",
+      "msi"
+    ]
+  }
+}
